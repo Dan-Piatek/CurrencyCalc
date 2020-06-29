@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script defer src="javascript/script.js"></script>
+    <title>Przelicznik walut</title>
+</head>
+
+<body class="body">
+
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="header">Przelicznik walut:</legend>
+            <p>
+                <span class="form__labelText">Kwota w złotówkach:</span>
+                <div class="form__fieldPosition">
+                    <input class="form__field js-pln" name="PLN" type="number" required value="100" step="any">
+                </div>
+            </p>
+            <p>
+                <span class="form__labelText">Przelicznik walutowy:</span>
+                <div class="form__fieldPosition">
+                    <input class="form__field js-exchangeRate" name="exchangeRate" type="number" required step="any">
+                </div>
+            </p>
+            <p>
+                <label>
+                    <span class="form__labelText">Waluta:</span>
+                    <div class="form__fieldPosition">
+                        <select class="js-currency" name="currency">
+                            <option class="js-usd">Dolar Amerykański</option>
+                            <option class="js-euro">Euro</option>
+                            <option class="js-usd">Funt Brytyjski</option>
+                        </select>
+                    </div>
+                </label>
+            </p>
+            <p><button class="form__button">Przelicz!</button>
+
+            </p>
+        </fieldset>
+    </form>
+    <p>Wartość wymiany: <strong class="js-result"></strong><span class="js-currencySign"> $</span> </p>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    background-color: #dddddd;
+    max-width: 800px;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(9, 121, 9);
+    padding: 10px;
+    color: #dddddd;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.js-currencySign {
+    font-weight: 700;
+}

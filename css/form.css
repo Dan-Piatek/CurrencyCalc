@@ -18,6 +18,7 @@
     margin: 10px;
     width: 100%;
     max-width: 800px;
+    background-color: #ddd;
 }
 
 .form__button {
